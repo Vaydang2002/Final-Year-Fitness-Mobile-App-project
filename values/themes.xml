@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PersonalisedFitnessMobileApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#465CD7</item>
+        <item name="colorSecondary">#041781</item>
+    </style>
+
+    <style name="Theme.PersonalisedFitnessMobileApplication" parent="Base.Theme.PersonalisedFitnessMobileApplication" />
+</resources>

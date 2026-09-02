@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Monday Section -->
+
+        <TextView
+            android:id="@+id/tvClassesTitle"
+            android:layout_width="317dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/archivo_black"
+            android:text="Weekly Class Schedule"
+            android:textColor="#01178E"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMonday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Monday"
+            android:textColor="#06187A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvClassesTitle" />
+
+        <!-- Cardio Class Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardCardio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:layout_constraintTop_toBottomOf="@id/tvMonday">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0E3FA"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvCardioName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HIIT Cardio"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="-3dp" />
+
+                <TextView
+                    android:id="@+id/tvCardioDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="09:00 AM - 09:45 AM (45 mins)"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@id/tvCardioName"
+                    app:layout_constraintTop_toBottomOf="@id/tvCardioName" />
+
+                <TextView
+                    android:id="@+id/tvCardioSpots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20/20 spots left"
+                    android:textColor="#4CAF50"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="85dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="160dp"
+                    android:backgroundTint="#06187A"
+                    android:text="Book"
+                    app:layout_constraintBottom_toTopOf="@+id/tvCardioSpots"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/tvCardioName"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Tuesday Section -->
+        <TextView
+            android:id="@+id/tvTuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Tuesday"
+            android:textColor="#06187A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardCardio" />
+
+        <!-- Strength Class Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardStrength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:layout_constraintTop_toBottomOf="@id/tvTuesday">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0E3FA"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvStrengthName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Strength &amp; Conditioning"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvStrengthDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:30 AM - 11:30 AM (1 hour)"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvStrengthName"
+                    app:layout_constraintTop_toBottomOf="@id/tvStrengthName"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/tvStrengthSpots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20/20 spots left"
+                    android:textColor="#4CAF50"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="85dp"
+                    android:layout_height="36dp"
+                    android:backgroundTint="#06187A"
+                    android:text="Book"
+                    app:layout_constraintBottom_toTopOf="@+id/tvStrengthSpots"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/tvStrengthName"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Wednesday Section -->
+        <TextView
+            android:id="@+id/tvWednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Wednesday"
+            android:textColor="#06187A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardStrength" />
+
+        <!-- Boxing Class Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardBoxing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:layout_constraintTop_toBottomOf="@id/tvWednesday">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0E3FA"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvBoxingName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Boxing"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvBoxingDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06:00 PM - 06:30 PM (30 mins)"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@id/tvBoxingName"
+                    app:layout_constraintTop_toBottomOf="@id/tvBoxingName" />
+
+                <TextView
+                    android:id="@+id/tvBoxingSpots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20/20 spots left"
+                    android:textColor="#4CAF50"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="85dp"
+                    android:layout_height="36dp"
+                    android:backgroundTint="#06187A"
+                    android:text="Book"
+                    app:layout_constraintBottom_toTopOf="@+id/tvBoxingSpots"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/tvBoxingName"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Thursday Section -->
+        <TextView
+            android:id="@+id/tvThursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Thursday"
+            android:textColor="#06187A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardBoxing" />
+
+        <!-- Yoga Class Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardYoga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="32dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvThursday">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E0E3FA"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvYogaName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yoga Flow"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="5dp" />
+
+                <TextView
+                    android:id="@+id/tvYogaDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="07:00 AM - 08:00 AM (1 hour)"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@id/tvYogaName"
+                    app:layout_constraintTop_toBottomOf="@id/tvYogaName" />
+
+                <TextView
+                    android:id="@+id/tvYogaSpots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20/20 spots left"
+                    android:textColor="#4CAF50"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="85dp"
+                    android:layout_height="36dp"
+                    android:backgroundTint="#06187A"
+                    android:text="Book"
+                    app:layout_constraintBottom_toTopOf="@+id/tvYogaSpots"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.994"
+                    app:layout_constraintStart_toEndOf="@+id/tvYogaName"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA">
+
+    <!-- Header Section -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headerMyMembership"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBackMyMembership"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_revert"
+            app:tint="#041781" />
+
+        <TextView
+            android:id="@+id/tvMyMembershipTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Membership"
+            android:textColor="#041781"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerMyMembership">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#D0D5FA"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="32dp">
+
+                    <ImageView
+                        android:id="@+id/ivMembershipIcon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:srcCompat="@android:drawable/ic_lock_idle_lock"
+                        app:tint="#041781" />
+
+                    <TextView
+                        android:id="@+id/tvStatusLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="ACTIVE MEMBERSHIP"
+                        android:textColor="#041781"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:alpha="0.7"/>
+
+                    <TextView
+                        android:id="@+id/tvCurrentMembershipName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="No Active Membership"
+                        android:textColor="#041781"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="16dp"
+                        android:background="#041781"
+                        android:alpha="0.2"/>
+
+                    <TextView
+                        android:id="@+id/tvExpiryDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Expires on: N/A"
+                        android:textColor="#041781"
+                        android:textSize="14sp"
+                        android:alpha="0.8"/>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tvBenefitsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Membership Perks"
+                android:textColor="#041781"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardStatus" />
+
+            <TextView
+                android:id="@+id/tvBenefitsList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="• Full access to all gym facilities\n• Priority booking for classes\n• Personalized workout recommendations\n• Member-only discounts in the shop"
+                android:textColor="#555555"
+                android:textSize="15sp"
+                android:lineSpacingExtra="6dp"
+                app:layout_constraintTop_toBottomOf="@id/tvBenefitsTitle" />
+
+            <Button
+                android:id="@+id/btnUpgradeMembership"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="48dp"
+                android:backgroundTint="#031992"
+                android:text="Renew or Upgrade Plan"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:cornerRadius="12dp"
+                app:layout_constraintTop_toBottomOf="@id/tvBenefitsList" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

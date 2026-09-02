@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Arduino Uno (0x2341, 0x0043) -->
+    <usb-device vendor-id="9025" product-id="67" />
+    <!-- Arduino Uno Clone (0x1a86, 0x7523 - CH340) -->
+    <usb-device vendor-id="6790" product-id="29987" />
+</resources>

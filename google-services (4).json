@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "109203706933",
+    "project_id": "personalised-fitness-mob-c02d8",
+    "storage_bucket": "personalised-fitness-mob-c02d8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109203706933:android:8cedf32eb41b0306eacd7c",
+        "android_client_info": {
+          "package_name": "com.example.personalisedfitnessmobileapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXU_D57ACYYmh1_AnONCRO_EckUdRmiw0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

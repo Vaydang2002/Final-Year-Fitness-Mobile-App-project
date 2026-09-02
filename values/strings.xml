@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Personalised Fitness Mobile Application</string>
+    <string name="hint_initial">Initial</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_surname">Surname</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Telephone</string>
+    <string name="hint_age">Age</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="text_or">OR</string>
+    <string name="btn_fingerprint_reg">Register with Fingerprint</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="error_age_min">Minimum age required is 16</string>
+    <string name="error_pass_match">Passwords do not match</string>
+    <string name="error_fill_fields">Please fill in all required fields</string>
+    <string name="content_desc_logo">App Logo</string>
+    <string name="content_desc_back">Back Button</string>
+</resources>
